@@ -1,0 +1,102 @@
+/* General */
+button.btn:focus,
+button.btn:hover {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #406a8e;
+}
+.sitetitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Search Bar */
+.search-input {
+  width: 240px;
+  outline: none;
+  padding: 0 6px;
+  border: 1px solid #406a8e;
+  border-radius: 5em;
+  line-height: 35px;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+}
+.search-button {
+  background-color: #fff;
+  color: #406a8e;
+  position: absolute;
+  width: 38.5px;
+  height: 37px;
+  outline: none;
+  margin-left: 12.5rem;
+  margin-top: auto;
+  border: 1px solid #406a8e;
+  border-radius: 50%;
+}
+.search-box:hover>.search-button {
+  color: #fff;
+  background-color: #406a8e;
+}
+
+/* Movie Cards */
+.movie-card {
+  overflow: hidden;
+  background-color: #b1c7da!important;
+  color: #1f4c73;
+}
+.movie-card img {
+  height: 300px;
+}
+.movie-card img:hover {
+  transform: scale(1.1);
+  transition-duration: .5s;
+}
+.btn-delete {
+  color: #fff!important;
+  background-color: #1f4c73!important;
+}
+.active-btn {
+  color: #065fd4!important;
+}
+
+/* Error message */
+div.row:empty:before {
+  content: 'No results found !';
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.05rem;
+  color: red;
+  font-weight: 600;
+}
+
+/* Filter Checkbox */
+.filter-form {
+  padding: 1.5rem 2rem 0rem;
+  text-align: center;
+}
+.checkbox-select label {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.09rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+  .search-box {
+    margin: auto;
+  }
+  .sitetitle {
+    text-align: center;
+    margin: auto!important;
+    padding-bottom: 1.2rem!important;
+  }
+}
